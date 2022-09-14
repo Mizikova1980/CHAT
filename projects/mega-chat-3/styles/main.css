@@ -1,0 +1,341 @@
+@import url(../styles/normalize.css);
+
+html, body, #app, #main {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: #0E1621;
+  color: #FEFEFD;
+  
+ 
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+}
+
+#main {
+  display: flex;
+}
+
+.left-side {
+  flex-grow: 1;
+  max-width: 320px;
+  background: #17212B;
+  
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.user-info {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #5387C1;
+
+}
+
+.user-photo, .message-item-photo {
+  margin-right: 15px;
+  background-image: url(/projects/mega-chat-3/no-photo.png);
+  background-size: cover;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.user-list-header {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #7F91A4;
+}
+
+.user-list {
+  padding: 5px 0 0 10px
+}
+
+.user-list-item {
+  
+  font-weight: bold;
+  color: #7F91A4;
+}
+
+.right-side {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  padding-left: 3px;;
+  overflow: hidden;
+}
+
+.massage-header {
+  height: 56px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 300;
+  background: #17212B;
+  color: white;
+  padding: 16px;
+}
+
+.users-number {
+  color: #7F91A4;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+
+
+.messages-container {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  background: #17212B;
+  height: 54px;
+}
+
+.message-input {
+  height: 30px;
+  flex-grow: 1;
+  margin: 0 10px;
+  background: #17212B;
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+  border: none;
+}
+
+.message-input: ::placeholder {
+  color: #5B6774;
+}
+
+.send-button {
+  height: 35px;
+  width: 112px;
+  background: #5387C1;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 10px 16px;
+}
+
+#login {
+  position: absolute;
+  top: 20vh;
+  width: 452px;
+  height: 497px;
+  background: #17212B;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-icon {
+  width: 139px;
+  height: 139px;
+  border-radius: 50%;
+  background: url(/projects/mega-chat-3/icons/Vector.png) no-repeat center, #232F3D;
+  margin-bottom: 29px;
+}
+
+.login-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 13px;
+}
+.login-desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: #7F91A4;
+  max-width: 330px;
+  text-align: center;
+}
+
+.login-field {
+  width: 300px;
+  height: 107px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-field input {
+  font-size: 16px;
+  height: 30px;
+  width: 298px;
+  background: #17212B;
+  border: none;
+  color:#858F98;
+}
+
+.login-field input:focus {
+  border: none;
+  color:white;
+ 
+}
+
+.login-submit {
+  height: 43px;
+  width: 132px;
+  border-radius: 5px;
+  background: #5188C1;
+  color: white;
+  border: none;
+}
+
+
+.message-item {
+  display: flex;
+}
+
+.message-item-system {
+  font-size: 14px;
+  color: gray;
+}
+
+.message-item ~ .message-item {
+  margin-top: 15px;
+}
+
+.message-item-right {
+  flex-grow: 1;
+}
+
+.message-item-header {
+  display: flex;
+  align-items: center;
+  color: #5387C1;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.message-item-header-name {
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.message-item-header-time {
+  color: gray;
+  font-size: 12px;
+}
+
+.message-item-text {
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  height: 33px;
+  width:fit-content;
+  background: #182633;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 2px;
+}
+
+
+
+
+#upload-photo {
+  position: absolute;
+  top: 20vh;
+  right: 50vh;
+  width: 365px;
+  height: 220px;
+  background: #17212B;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+ .close__btn {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+ }
+
+
+.upload-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 39px;
+  
+}
+.upload-content {
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+   
+}
+
+.preview-photo {
+  margin-right: 15px;
+  background: url(/projects/mega-chat-3/icons/defaultphoto.png) no-repeat center, #232F3D;
+  border-radius: 50%;
+  width: 86px;
+  height: 86px;
+}
+
+#preview-photo {
+  position: absolute;
+  top: 20vh;
+  right: 50vh;
+  width: 364px;
+  height: 452px;
+  background: #17212B;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.preview-block {
+  width: 284px;
+  height: 308px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #17212B cover no-repeat center;
+  margin-bottom: 15px;
+}
+
+.preview-text {
+  font-size: 14px;
+  font-weight: 300;
+  color: #7F91A4;
+  margin-bottom: 32px;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.clean__btn, .load__btn {
+  color: #6BB2F2;
+  border: none;
+  background: #1D2A3A;
+}
+
